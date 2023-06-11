@@ -6,15 +6,15 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives;
+namespace LTDBeget\ApacheConfigurator\Directives;
 
 
-use LTDBeget\apacheConfigurator\exceptions\NotAllowedContextException;
-use LTDBeget\apacheConfigurator\exceptions\NotAllowedValueException;
-use LTDBeget\apacheConfigurator\interfaces\iDirective;
-use LTDBeget\apacheConfigurator\interfaces\iDirectivePath;
-use LTDBeget\apacheConfigurator\interfaces\iContext;
-use LTDBeget\apacheConfigurator\serializers\PlainSerializer;
+use LTDBeget\ApacheConfigurator\exceptions\NotAllowedContextException;
+use LTDBeget\ApacheConfigurator\exceptions\NotAllowedValueException;
+use LTDBeget\ApacheConfigurator\interfaces\iDirective;
+use LTDBeget\ApacheConfigurator\interfaces\iDirectivePath;
+use LTDBeget\ApacheConfigurator\interfaces\iContext;
+use LTDBeget\ApacheConfigurator\serializers\PlainSerializer;
 
 class Directive implements iDirective
 {

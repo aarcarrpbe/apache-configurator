@@ -5,9 +5,9 @@
  * Date: 24.11.14
  * Time: 12:58
  */
-namespace LTDBeget\apacheConfigurator\serializers;
+namespace LTDBeget\ApacheConfigurator\serializers;
 
-use LTDBeget\apacheConfigurator\interfaces\iDirective;
+use LTDBeget\ApacheConfigurator\interfaces\iDirective;
 
 abstract class BaseSerializer
 {

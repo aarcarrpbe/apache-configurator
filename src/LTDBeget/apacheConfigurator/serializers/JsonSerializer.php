@@ -6,11 +6,11 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\serializers;
+namespace LTDBeget\ApacheConfigurator\serializers;
 
 
-use LTDBeget\apacheConfigurator\interfaces\iConfigurationFile;
-use LTDBeget\apacheConfigurator\interfaces\iSerializer;
+use LTDBeget\ApacheConfigurator\interfaces\iConfigurationFile;
+use LTDBeget\ApacheConfigurator\interfaces\iSerializer;
 
 class JsonSerializer extends BaseSerializer implements iSerializer
 {

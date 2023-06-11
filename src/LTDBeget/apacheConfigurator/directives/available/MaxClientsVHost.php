@@ -6,10 +6,10 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives\available;
+namespace LTDBeget\ApacheConfigurator\Directives\available;
 
 
-use LTDBeget\apacheConfigurator\directives\Directive;
+use LTDBeget\ApacheConfigurator\Directives\Directive;
 
 class MaxClientsVHost extends Directive
 {

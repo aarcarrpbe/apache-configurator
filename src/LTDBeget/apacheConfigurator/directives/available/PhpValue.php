@@ -1,19 +1,17 @@
 <?php
 /**
- * Automatically generated
- *
  * @author: Viskov Sergey
- * @date: 07.05.15
+ * @date: 17.07.15
+ * @time: 20:17
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives\available;
+namespace LTDBeget\ApacheConfigurator\Directives\available;
 
 
-use LTDBeget\apacheConfigurator\ConfigurationFile;
-use LTDBeget\apacheConfigurator\directives\Directive;
+use LTDBeget\ApacheConfigurator\Directives\Directive;
 
-class Anonymous_LogEmail extends Directive
+class PhpValue extends Directive
 {
     /**
      * Return link to full description of apache directive
@@ -21,7 +19,7 @@ class Anonymous_LogEmail extends Directive
      */
     public static function getApacheDocLink()
     {
-        return Directive::$apacheSite."/docs/2.4/mod/mod_authn_anon.html#anonymous_logemail";
+        return "http://php.net/manual/ru/configuration.changes.php";
     }
 
     /**
@@ -30,7 +28,7 @@ class Anonymous_LogEmail extends Directive
      */
     public static function getModule()
     {
-        return "mod_authn_anon";
+        return "mod_php";
     }
 
     /**
@@ -39,7 +37,7 @@ class Anonymous_LogEmail extends Directive
      */
     public static function getDescription()
     {
-        return "Sets whether the password entered will be logged in the error log";
+        return "go to php.net";
     }
 
     /**
@@ -48,7 +46,7 @@ class Anonymous_LogEmail extends Directive
      */
     public static function getSyntax()
     {
-        return 'Anonymous_LogEmail On|Off';
+        return 'php_value value';
     }
 
     /**
@@ -59,16 +57,4 @@ class Anonymous_LogEmail extends Directive
     {
         return false;
     }
-
-    /**
-     * Set allowed context of concrete directive
-     */
-    protected function setAllowedContext()
-    {
-        $this->allowedContext = [
-            Directory::getFullName(),
-            ConfigurationFile::HTACCESS,
-        ];
-    }
-
 }

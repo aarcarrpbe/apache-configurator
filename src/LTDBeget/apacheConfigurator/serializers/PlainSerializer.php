@@ -6,14 +6,14 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\serializers;
+namespace LTDBeget\ApacheConfigurator\serializers;
 
 
-use LTDBeget\apacheConfigurator\ConfigurationFile;
-use LTDBeget\apacheConfigurator\interfaces\iConfigurationFile;
-use LTDBeget\apacheConfigurator\interfaces\iContext;
-use LTDBeget\apacheConfigurator\interfaces\iDirective;
-use LTDBeget\apacheConfigurator\interfaces\iSerializer;
+use LTDBeget\ApacheConfigurator\ConfigurationFile;
+use LTDBeget\ApacheConfigurator\interfaces\iConfigurationFile;
+use LTDBeget\ApacheConfigurator\interfaces\iContext;
+use LTDBeget\ApacheConfigurator\interfaces\iDirective;
+use LTDBeget\ApacheConfigurator\interfaces\iSerializer;
 
 class PlainSerializer extends BaseSerializer implements iSerializer
 {

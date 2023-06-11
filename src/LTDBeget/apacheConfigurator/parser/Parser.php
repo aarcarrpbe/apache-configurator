@@ -6,7 +6,7 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\parser;
+namespace LTDBeget\ApacheConfigurator\parser;
 
 
 use DOMDocument;
@@ -124,7 +124,7 @@ class Parser
     public function getDirectivesDocumentation()
     {
         foreach ($this->getFullList() as $name => $link) {
-            if(!class_exists("LTDBeget\\apacheConfigurator\\directives\\available\\".$name)) { // if not Generated already
+            if(!class_exists("LTDBeget\\ApacheConfigurator\\Directives\\available\\".$name)) { // if not Generated already
                 echo "start proses directive {$name} link: ".$this->getAbsoluteLink($link)."\n";
                 $doc = $this->getDomDocument($this->getAbsoluteLink($link));
                 $xpath = new \DOMXPath($doc);

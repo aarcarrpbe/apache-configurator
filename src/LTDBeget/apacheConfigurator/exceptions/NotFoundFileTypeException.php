@@ -6,7 +6,7 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\exceptions;
+namespace LTDBeget\ApacheConfigurator\exceptions;
 
 
 class NotFoundFileTypeException extends \Exception {

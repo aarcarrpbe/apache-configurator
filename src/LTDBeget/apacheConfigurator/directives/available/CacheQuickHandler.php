@@ -7,11 +7,11 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives\available;
+namespace LTDBeget\ApacheConfigurator\Directives\available;
 
 
-use LTDBeget\apacheConfigurator\ConfigurationFile;
-use LTDBeget\apacheConfigurator\directives\Directive;
+use LTDBeget\ApacheConfigurator\ConfigurationFile;
+use LTDBeget\ApacheConfigurator\Directives\Directive;
 
 class CacheQuickHandler extends Directive
 {

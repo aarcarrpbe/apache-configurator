@@ -6,21 +6,21 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator;
+namespace LTDBeget\ApacheConfigurator;
 
 
-use LTDBeget\apacheConfigurator\directives\Directive;
-use LTDBeget\apacheConfigurator\directives\DirectivePath;
-use LTDBeget\apacheConfigurator\directives\Unknown;
-use LTDBeget\apacheConfigurator\exceptions\NotAllowedContextException;
-use LTDBeget\apacheConfigurator\exceptions\NotAllowedValueException;
-use LTDBeget\apacheConfigurator\exceptions\NotFoundDirectiveException;
-use LTDBeget\apacheConfigurator\exceptions\NotFoundFileTypeException;
-use LTDBeget\apacheConfigurator\exceptions\WrongDirectivePathFormat;
-use LTDBeget\apacheConfigurator\interfaces\iConfigurationFile;
-use LTDBeget\apacheConfigurator\interfaces\iContext;
-use LTDBeget\apacheConfigurator\interfaces\iDirective;
-use LTDBeget\apacheConfigurator\interfaces\iDirectivePath;
+use LTDBeget\ApacheConfigurator\Directives\Directive;
+use LTDBeget\ApacheConfigurator\Directives\DirectivePath;
+use LTDBeget\ApacheConfigurator\Directives\Unknown;
+use LTDBeget\ApacheConfigurator\exceptions\NotAllowedContextException;
+use LTDBeget\ApacheConfigurator\exceptions\NotAllowedValueException;
+use LTDBeget\ApacheConfigurator\exceptions\NotFoundDirectiveException;
+use LTDBeget\ApacheConfigurator\exceptions\NotFoundFileTypeException;
+use LTDBeget\ApacheConfigurator\exceptions\WrongDirectivePathFormat;
+use LTDBeget\ApacheConfigurator\interfaces\iConfigurationFile;
+use LTDBeget\ApacheConfigurator\interfaces\iContext;
+use LTDBeget\ApacheConfigurator\interfaces\iDirective;
+use LTDBeget\ApacheConfigurator\interfaces\iDirectivePath;
 
 class ConfigurationFile implements iConfigurationFile
 {
@@ -98,7 +98,7 @@ class ConfigurationFile implements iConfigurationFile
             return $alreadyExists;
         }
 
-        $className = __NAMESPACE__."\\directives\\available\\".$directiveName;
+        $className = __NAMESPACE__."\\Directives\\available\\".$directiveName;
         if(class_exists($className)) {
             $directive = new $className($value, $context);
         } else {

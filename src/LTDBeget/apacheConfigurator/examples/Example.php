@@ -6,7 +6,7 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\examples;
+namespace LTDBeget\ApacheConfigurator\examples;
 
 
 class Example {

@@ -6,11 +6,11 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives;
+namespace LTDBeget\ApacheConfigurator\Directives;
 
 
-use LTDBeget\apacheConfigurator\exceptions\WrongDirectivePathFormat;
-use LTDBeget\apacheConfigurator\interfaces\iDirectivePath;
+use LTDBeget\ApacheConfigurator\exceptions\WrongDirectivePathFormat;
+use LTDBeget\ApacheConfigurator\interfaces\iDirectivePath;
 
 class DirectivePath implements iDirectivePath
 {

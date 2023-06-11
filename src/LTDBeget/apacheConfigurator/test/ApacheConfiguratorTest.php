@@ -6,7 +6,7 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\test;
+namespace LTDBeget\ApacheConfigurator\test;
 
 
 class ApacheConfiguratorTest {

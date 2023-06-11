@@ -6,14 +6,14 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\serializers;
+namespace LTDBeget\ApacheConfigurator\serializers;
 
 
-use LTDBeget\apacheConfigurator\ConfigurationFile;
-use LTDBeget\apacheConfigurator\directives\DirectivePath;
-use LTDBeget\apacheConfigurator\interfaces\iConfigurationFile;
-use LTDBeget\apacheConfigurator\interfaces\iDirective;
-use LTDBeget\apacheConfigurator\interfaces\iSerializer;
+use LTDBeget\ApacheConfigurator\ConfigurationFile;
+use LTDBeget\ApacheConfigurator\Directives\DirectivePath;
+use LTDBeget\ApacheConfigurator\interfaces\iConfigurationFile;
+use LTDBeget\ApacheConfigurator\interfaces\iDirective;
+use LTDBeget\ApacheConfigurator\interfaces\iSerializer;
 
 class ArraySerializer extends BaseSerializer implements iSerializer
 {

@@ -1,10 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
-use LTDBeget\apacheConfigurator\ConfigurationFile;
-use LTDBeget\apacheConfigurator\serializers\ArraySerializer;
-use LTDBeget\apacheConfigurator\serializers\JsonSerializer;
-use LTDBeget\apacheConfigurator\serializers\PlainSerializer;
+use LTDBeget\ApacheConfigurator\ConfigurationFile;
+use LTDBeget\ApacheConfigurator\serializers\ArraySerializer;
+use LTDBeget\ApacheConfigurator\serializers\JsonSerializer;
+use LTDBeget\ApacheConfigurator\serializers\PlainSerializer;
 
 $abstractDirectivesTree = [
     [

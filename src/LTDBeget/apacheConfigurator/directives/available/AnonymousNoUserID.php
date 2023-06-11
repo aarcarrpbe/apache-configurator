@@ -7,13 +7,13 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives\available;
+namespace LTDBeget\ApacheConfigurator\Directives\available;
 
 
-use LTDBeget\apacheConfigurator\ConfigurationFile;
-use LTDBeget\apacheConfigurator\directives\Directive;
+use LTDBeget\ApacheConfigurator\ConfigurationFile;
+use LTDBeget\ApacheConfigurator\Directives\Directive;
 
-class Anonymous_VerifyEmail extends Directive
+class AnonymousNoUserID extends Directive
 {
     /**
      * Return link to full description of apache directive
@@ -21,7 +21,7 @@ class Anonymous_VerifyEmail extends Directive
      */
     public static function getApacheDocLink()
     {
-        return Directive::$apacheSite."/docs/2.4/mod/mod_authn_anon.html#anonymous_verifyemail";
+        return Directive::$apacheSite."/docs/2.4/mod/mod_authn_anon.html#anonymous_nouserid";
     }
 
     /**
@@ -39,7 +39,7 @@ class Anonymous_VerifyEmail extends Directive
      */
     public static function getDescription()
     {
-        return "Sets whether to check the password field for a correctly formatted email address";
+        return "Sets whether the userID field may be empty";
     }
 
     /**
@@ -48,7 +48,7 @@ class Anonymous_VerifyEmail extends Directive
      */
     public static function getSyntax()
     {
-        return 'Anonymous_VerifyEmail On|Off';
+        return 'Anonymous_NoUserID On|Off';
     }
 
     /**

@@ -6,12 +6,12 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\directives;
+namespace LTDBeget\ApacheConfigurator\Directives;
 
 
-use LTDBeget\apacheConfigurator\exceptions\NotAllowedContextException;
-use LTDBeget\apacheConfigurator\interfaces\iDirective;
-use LTDBeget\apacheConfigurator\interfaces\iContext;
+use LTDBeget\ApacheConfigurator\exceptions\NotAllowedContextException;
+use LTDBeget\ApacheConfigurator\interfaces\iDirective;
+use LTDBeget\ApacheConfigurator\interfaces\iContext;
 
 class Unknown extends Directive
 {
@@ -47,8 +47,8 @@ class Unknown extends Directive
      * @param String $value
      * @param Boolean $isSection
      * @param iContext $context
-     * @throws \LTDBeget\apacheConfigurator\exceptions\NotAllowedContextException
-     * @throws \LTDBeget\apacheConfigurator\exceptions\NotAllowedValueException
+     * @throws \LTDBeget\ApacheConfigurator\exceptions\NotAllowedContextException
+     * @throws \LTDBeget\ApacheConfigurator\exceptions\NotAllowedValueException
      */
     public function __construct($type, $value, $isSection, iContext $context)
     {

@@ -6,7 +6,7 @@
  */
 
 
-namespace LTDBeget\apacheConfigurator\interfaces;
+namespace LTDBeget\ApacheConfigurator\interfaces;
 
 
 interface iDirective extends iContext, iContextAble
